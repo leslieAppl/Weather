@@ -50,6 +50,7 @@ class WeatherVC: UIViewController {
         formatter.unitStyle = MeasurementFormatter.UnitStyle.short
         formatter.unitOptions = MeasurementFormatter.UnitOptions.providedUnit
         
+        cityLbl.text = AppData.citiesName[selected]
         temperatureLbl.text = formatter.string(from: temperature)
         feelsLbl.text = formatter.string(from: feels)
         precipitationLbl.text = formatter.string(from: precipitation)
