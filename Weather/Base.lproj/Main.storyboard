@@ -271,6 +271,9 @@
                                             <segment title="Fahrenheit"/>
                                         </segments>
                                         <color key="selectedSegmentTintColor" red="0.015686274510000001" green="0.6705882353" blue="0.92449144260000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="changeTemperature:" destination="w6Z-hH-Qiz" eventType="valueChanged" id="n1f-tY-abR"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -306,6 +309,10 @@
                         <viewLayoutGuide key="safeArea" id="ZQz-ZN-0bJ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="iconsettings" id="SkS-d0-Ipf"/>
+                    <connections>
+                        <outlet property="picker" destination="RkM-RS-Ell" id="5hf-ho-Bad"/>
+                        <outlet property="selectTemperature" destination="cNr-pg-PVL" id="Rv5-xS-F94"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4tb-Mm-psF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
