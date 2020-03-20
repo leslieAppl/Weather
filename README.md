@@ -26,6 +26,7 @@
             temperatureLbl.text = formatter.string(from: temperature)
             feelsLbl.text = formatter.string(from: feels)
             precipitationLbl.text = formatter.string(from: precipitation)
+            humidityLbl.text = "\(cityData.humidity) %"
             windLbl.text = formatter.string(from: wind)
             pressureLbl.text = formatter.string(from: pressure)
             visibilityLbl.text = formatter.string(from: visibility)
